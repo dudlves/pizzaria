@@ -1,3 +1,3 @@
 const express = require('express');
-const router = espress.router;
-module.exports = {router};
+const router = express.Router();
+module.exports = router;

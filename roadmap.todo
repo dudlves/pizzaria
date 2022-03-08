@@ -1,10 +1,10 @@
 Fase 1 - Setup Inicial:
-    ☐ Faça um fork desse repositório para a sua conta github
-    ☐ Clone o seu repositório para a sua máquina local
-    ☐ Inicie um projeto node na pasta deste projeto
-    
-    Verificações: 
-        ☐ Se o comando npm init criou um arquivo package.json na raíz do seu projeto
+    ✔ Faça um fork desse repositório para a sua conta github @done(22-03-08 16:20)
+    ✔ Clone o seu repositório para a sua máquina local @done(22-03-08 16:20)
+    ✔ Inicie um projeto node na pasta deste projeto @done(22-03-08 16:20)
+    ✔ @done(22-03-08 16:20)
+    ✔ Verificações: @done(22-03-08 16:20)
+        ✔ Se o comando npm init criou um arquivo package.json na raíz do seu projeto @done(22-03-08 16:20)
 
 
 
@@ -53,8 +53,9 @@ Fase 4 - Organizando o MVC:
     ☐ No arquivo app.js importe o roteador recém criado para uma constante chamada PizzasRouter.
         Atente para que o uso do PizzasRouter ocorra depois da criação da
         aplicação mas antes da linha que iniciar.
-    ☐ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____)
+    /☐ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____)
     ☐ Crie uma pasta chamada controllers na raíz do projeto.
+    /
     ☐ Na pasta controllers crie um arquivo chamado PizzasController.js
         Em passos a frente, o arquivo PizzasController.js irá conter as funções
         responsáveis por tratar da requisição e da resposta a ser enviada para o cliente.
