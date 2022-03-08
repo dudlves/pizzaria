@@ -9,62 +9,62 @@ Fase 1 - Setup Inicial:
 
 
 Fase 2 - Criação da aplicação (Criado o sevidor web no app.js):
-    ☐ Instale a biblioteca express no projeto
-    ☐ Faça com que o git ignore a pasta node_modules
-    ☐ Crie um arquivo chamado app.js na raíz do seu projeto
-    ☐ No app.js:
-        ☐ Importe o express
-        ☐ Crie um aplicação web com o express e guarde-a numa constante app.
-        ☐ Crie uma rota get para o endereço '/'.
-            Quando acessada, essa rota deve responder um 'Olá, visitante!' para o cliente
-        ☐ Escreva uma linha que iniciará o servidor na porta 3000 (app.listen)
+    ✔ Instale a biblioteca express no projeto @done(22-03-08 16:20)
+    ✔ Faça com que o git ignore a pasta node_modules @done(22-03-08 16:20)
+    ✔ Crie um arquivo chamado app.js na raíz do seu projeto @done(22-03-08 16:20)
+    ✔ No app.js: @done(22-03-08 16:20)
+        ✔ Importe o express @done(22-03-08 16:20)
+        ✔ Crie um aplicação web com o express e guarde-a numa constante app. @done(22-03-08 16:20)
+        ✔ Crie uma rota get para o endereço '/'. @done(22-03-08 16:20)
+            ✔ Quando acessada, essa rota deve responder um 'Olá, visitante!' para o cliente @done(22-03-08 16:20)
+        ✔ Escreva uma linha que iniciará o servidor na porta 3000 (app.listen) @done(22-03-08 16:20)
             Quando o servidor iniciar, ele deve escrever no console: "Servidor rodando na porta 3000"
 
     Verificações:
-        ☐ Execute o comando node app.js para iniciar o servidor. Você deve ver a mensagem "Servidor rodando na porta 3000" no console
-        ☐ Abra o navegador e visite o endereço http://localhost:3000. Deve aparecer no navegador a frase "Olá, visitante!"
-        ☐ Verifique se a pasta node_modules aparece listada no comando git status
+        ✔ Execute o comando node app.js para iniciar o servidor. Você deve ver a mensagem "Servidor rodando na porta 3000" no console @done(22-03-08 16:23)
+        ✔ Abra o navegador e visite o endereço http://localhost:3000. Deve aparecer no navegador a frase "Olá, visitante!" @done(22-03-08 16:23)
+        ✔ Verifique se a pasta node_modules aparece listada no comando git status @done(22-03-08 16:23)
 
 
 
 Fase 3 - Instalação do nodemon e configuração para auto restart:
-    ☐ Instale o nodemon no projeto como dependência de desenvolvimento
-    https://pt.stackoverflow.com/questions/163785/qual-a-diferen%C3%A7a-entre-dependencies-e-devdependencies
-
-    ☐ Altere o package.json:
-        ☐ Acrescente uma propriedade "start" ao objeto "scripts".
-        ☐ A propriedade start deve conter a string "nodemon app.js"
-    ☐ Execute o comando npm start no console.
+    ✔ Instale o nodemon no projeto como dependência de desenvolvimento @done(22-03-08 16:23)
+    ✔ https://pt.stackoverflow.com/questions/163785/qual-a-diferen%C3%A7a-entre-dependencies-e-devdependencies @done(22-03-08 16:23)
+✔ @done(22-03-08 16:23)
+    ✔ Altere o package.json: @done(22-03-08 16:23)
+        ✔ Acrescente uma propriedade "start" ao objeto "scripts". @done(22-03-08 16:23)
+        ✔ A propriedade start deve conter a string "nodemon app.js" @done(22-03-08 16:23)
+    ✔ Execute o comando npm start no console. @done(22-03-08 16:23)
 
     Verificações:
-        ☐ Veja se a mensagem "Servidor rodando na porta 3000" aparece no console.
-        ☐ Abra o navegador e acesse http://localhost:3000. A mensagem 'Olá, visitante!' deve aparecer na tela.
+        ✔ Veja se a mensagem "Servidor rodando na porta 3000" aparece no console. @done(22-03-08 16:23)
+        ✔ Abra o navegador e acesse http://localhost:3000. A mensagem 'Olá, visitante!' deve aparecer na tela. @done(22-03-08 16:23)
 
 
         
 Fase 4 - Organizando o MVC:
-    ☐ Crie uma pasta chamada routes na raíz do projeto.
-    ☐ Na pasta routes, crie um arquivo chamado PizzasRouter.js
-    ☐ No arquivo PizzasRouter.js:
-        ☐ Importe o express.
-        ☐ Crie um roteador e armazene-o numa constante router
-        ☐ Exporte essa constante
-
-    ☐ No arquivo app.js importe o roteador recém criado para uma constante chamada PizzasRouter.
-        Atente para que o uso do PizzasRouter ocorra depois da criação da
-        aplicação mas antes da linha que iniciar.
-    /☐ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____)
-    ☐ Crie uma pasta chamada controllers na raíz do projeto.
-    /
-    ☐ Na pasta controllers crie um arquivo chamado PizzasController.js
-        Em passos a frente, o arquivo PizzasController.js irá conter as funções
-        responsáveis por tratar da requisição e da resposta a ser enviada para o cliente.
-        Essas funções chamaremos de controllers ou controladores.
-    ☐ No arquvo PizzasController.js crie um objeto literal vazio e o exporte utilizando o module.exports
-    ☐ Crie uma pasta chamada public.
-    ☐ Dentro da pasta public, crie duas pastas: css e img
-    ☐ Mova os arquivos que estão na pasta imagens para a pasta public/img
-    ☐ Remova a pasta imagens
+    ✔ Crie uma pasta chamada routes na raíz do projeto. @done(22-03-08 16:27)
+    ✔ Na pasta routes, crie um arquivo chamado PizzasRouter.js @done(22-03-08 16:27)
+    ✔ No arquivo PizzasRouter.js: @done(22-03-08 16:27)
+        ✔ Importe o express. @done(22-03-08 16:27)
+        ✔ Crie um roteador e armazene-o numa constante router @done(22-03-08 16:27)
+        ✔ Exporte essa constante @done(22-03-08 16:27)
+✔ @done(22-03-08 16:28)
+    ✔ No arquivo app.js importe o roteador recém criado para uma constante chamada PizzasRouter. @done(22-03-08 16:28)
+        ✔ Atente para que o uso do PizzasRouter ocorra depois da criação da @done(22-03-08 16:28)
+        ✔ aplicação mas antes da linha que iniciar. @done(22-03-08 16:28)
+    ✔ /☐ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____) @done(22-03-08 16:28)
+    ✔ Crie uma pasta chamada controllers na raíz do projeto. @done(22-03-08 16:28)
+    ✔ / @done(22-03-08 16:28)
+    ✔ Na pasta controllers crie um arquivo chamado PizzasController.js @done(22-03-08 16:28)
+        ✔ Em passos a frente, o arquivo PizzasController.js irá conter as funções @done(22-03-08 16:28)
+        ✔ responsáveis por tratar da requisição e da resposta a ser enviada para o cliente. @done(22-03-08 16:28)
+        ✔ Essas funções chamaremos de controllers ou controladores. @done(22-03-08 16:28)
+    ✔ No arquvo PizzasController.js crie um objeto literal vazio e o exporte utilizando o module.exports @done(22-03-08 16:30)
+    ✔ Crie uma pasta chamada public. @done(22-03-08 16:30)
+    ✔ Dentro da pasta public, crie duas pastas: css e img @done(22-03-08 16:30)
+    ✔ Mova os arquivos que estão na pasta imagens para a pasta public/img @done(22-03-08 16:30)
+    ✔ Remova a pasta imagens @done(22-03-08 16:30)
     
     Verificações:
         A cada alteração salva nos passos da Fase 4
@@ -74,9 +74,9 @@ Fase 4 - Organizando o MVC:
 
 
 Fase 5 - Configurando o template engina e pasta de arquivos públicos:
-    ☐ Instale no projeto a biblioteca ejs
-    ☐ No app.js:
-        ☐ Importe a biblioteca nativa path.
+    ✔ Instale no projeto a biblioteca ejs @done(22-03-08 16:43)
+    ✔ No app.js: @done(22-03-08 16:58)
+        ✔ Importe a biblioteca nativa path. @done(22-03-08 16:58)
         ☐ Configure a aplicação para que ela utilize o EJS como template engine
             Dica: Linha 12 de https://github.com/sergiomoura/filnemateca/blob/0721CDPROCV01BRED/index.js
         ☐ Configure a aplicação para que ela reconheça a pasta public como a pasta de arquivos públicos e estáticos
