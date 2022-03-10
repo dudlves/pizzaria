@@ -15,13 +15,19 @@ const Pizzas = {
         res.render('pizza.ejs',{pizza})
     },
     buscar: (req,res) =>{
-        let trechoBuscado = req.query.busca;
-
+       let busca = req.query.q;
+       if (busca){
+           let result = pizzas.filter(p => p.nome.toUpperCase().includes(busca.toUpperCase()));
+           return res.render('../views/pizzas.ejs', { pizzas: result,busca});
+       }else{
+           return res.redirect('/');
+       }
         
     }
 };
 
-const req = require('express/lib/request');
-const { bus } = require('nodemon/lib/utils');
+
+
+
 const pizzas = require('../database/Pizzas.json')
 module.exports = Pizzas

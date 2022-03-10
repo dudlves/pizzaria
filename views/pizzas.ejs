@@ -18,10 +18,10 @@
 		<% 
 		for(p of pizzas){ 
 		%> <article>
-			<img src="<% p.img%>" alt="<%p.nome%>">
+			<img src="<%= p.img%>" alt="<%= p.nome%>">
 			<a href="/pizzas/<%= p.id %>">Ver Mais</a>
 			<button>+ Add</button>
-			<div>Quatro Queijos</div>
+			<div><%= p.nome%></div>
 			<span>R$ 33,90</span>
 		</article>
 	<% } %>	
