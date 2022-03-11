@@ -10,7 +10,7 @@
 <body>
 	<link rel="stylesheet" href="/css/index.css">
 	<form action="/pizzas/busca" method="get">
-		<input type="text" name="q" placeholder="Qual pizza você procura?" autocomplete="off" value="">
+		<input type="text" name="q" placeholder="Qual pizza você procura?" autocomplete="off" value="<%=busca%>">
 		<button type="submit">Buscar</button>
 	</form>
 
@@ -25,7 +25,6 @@
 			<span>R$ 33,90</span>
 		</article>
 	<% } %>	
-		
 	</main>
 	<% if (pizzas.length == 0){%>
         <div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>

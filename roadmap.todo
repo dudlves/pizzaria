@@ -239,7 +239,7 @@ Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada:
         específico na sua busca."
 
 Fase 14 - Fazendo com que o que o usuário digitou na busca não seja perdido:
-    ☐ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio.
+    ✔ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio. @done(22-03-10 21:56)
     ☐ No controller listar do PizzasController, além do array de pizzas, passe um campo "busca" com o valor '' (string vazia).
 
 Fase 15 - Passando de uma pizza para outra:
@@ -247,15 +247,15 @@ Fase 15 - Passando de uma pizza para outra:
     uma pizza, seja possível navegar para a próxima pizza e para
     a pizza anterior clicando nos links em forma de seta
     ☐ Na função mostrar no arquivo PizzasController:
-        - Declare duas variáveis: idProxima e idAnterior 
-        - Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id)
-        - Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao
-        - Guarde a pizza da posicao encontrada na variável pizza
-        - Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza
-        - Caso contrário, idProxima deve ter o id da pizza da posição seguinte
-        - Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza
-        - Caso controário, idAnterior deve receber o id da pizza na posição anterior.
-    ☐ No arquivo pizza.ejs, adeque os links:
+        ✔ Declare duas variáveis: idProxima e idAnterior @done(22-03-10 22:27)
+        ✔ Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id) @done(22-03-10 22:27)
+        ✔ Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao @done(22-03-10 22:33)
+        ✔ Guarde a pizza da posicao encontrada na variável pizza @done(22-03-10 22:56)
+        ✔ Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza @done(22-03-10 22:56)
+        ✔ Caso contrário, idProxima deve ter o id da pizza da posição seguinte @done(22-03-10 22:56)
+        ✔ Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza @done(22-03-10 22:56)
+        ✔ Caso controário, idAnterior deve receber o id da pizza na posição anterior. @done(22-03-10 22:56)
+    ✔ No arquivo pizza.ejs, adeque os links: @done(22-03-10 22:56)
         Onde se vê:
             <a href="pizza.html" class="prev">
         Deve se ver:

@@ -10,14 +10,6 @@
 <body>
 	<link rel="stylesheet" href="/css/pizza.css">
 	<main>
-		<!-- <h1><%= pizzas.nome %></h1>
-		<h2>R$ 33,90</h2>
-		<img src="/img/quatroqueijos.jpg" alt="">
-		<div>Ingredientes: Quero 1, Queijo 2, Queijo 3 e Queijo 4</div>
-		<button>+ Add</button>
-		<a href="pizza.html" class="prev">&lt;</a>
-		<a href="pizza.html" class="next">&gt;</a> -->
-
 		<% 
         for(let p of pizzas){
         %>
@@ -29,7 +21,6 @@
             <span> <%=p.preco%></span>
         </article> 
         <%}%>
-
 	</main>
 	
 </body>
