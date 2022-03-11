@@ -27,6 +27,9 @@
 	<% } %>	
 		
 	</main>
+	<% if (pizzas.length == 0){%>
+        <div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
+    <%}%>
 
 	<!--
 	<div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>

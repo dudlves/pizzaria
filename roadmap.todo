@@ -211,15 +211,15 @@ Fase 12 - Exibindo pizzas buscadas:
         Essa função deve:
             ✔ Capturar o que o usuário digitou no campo de busca e guardar na variável trechoBuscado @done(22-03-10 16:03)
                Dica: Dê um console.log(req.query) e veja o conteúdo desse objeto.
-            ☐ Se o trechoBuscado for vazio, redirecione o usuário para a rota '/'
+            ✔ Se o trechoBuscado for vazio, redirecione o usuário para a rota '/' @done(22-03-10 19:00)
                 Dica: res.redirect(___)
-            ☐ Se trechoBuscado não for vazio:
-                - Filtre do array de pizzas todas as pizzas que tem no nome o trechoBuscado
-                    Atenção: A busca não deve ser sensível ao caso, ou seja, 
-                    buscando por 'm' deve encontrar 'Marguerita', mesmo tendo-se
-                    buscado pela letra minúscula
-                - Armazene o resultado dessa filtragem numa variável resultado
-                - Renderize a view pizzas.ejs passando para ela um objeto literal contendo:
+            ✔ Se trechoBuscado não for vazio: @done(22-03-10 20:44)
+                ✔ Filtre do array de pizzas todas as pizzas que tem no nome o trechoBuscado @done(22-03-10 20:44)
+                    ✔ Atenção: A busca não deve ser sensível ao caso, ou seja, @done(22-03-10 20:44)
+                    ✔ buscando por 'm' deve encontrar 'Marguerita', mesmo tendo-se @done(22-03-10 20:44)
+                    ✔ buscado pela letra minúscula @done(22-03-10 20:44)
+                ✔ Armazene o resultado dessa filtragem numa variável resultado @done(22-03-10 20:44)
+                ✔ Renderize a view pizzas.ejs passando para ela um objeto literal contendo: @done(22-03-10 20:44)
                     1. Um campo de nome pizzas e de valor igual a variável resultado.
                     2. Um campo de nome busca com o valor igual a variável trechoBuscado.
                 Dica: res.render('pizzas.ejs',{campo1: valor1, campo2: valor2})
@@ -228,7 +228,7 @@ Fase 12 - Exibindo pizzas buscadas:
         Devem aparecer somente as pizzas Baiana e Meat & Bacon
 
 Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada:
-    ☐ No pizzas.ejs:
+    ✔ No pizzas.ejs: @done(22-03-10 21:12)
         Crie um elemento por cento e nele um if que testa se
         o tamanho do array de pizzas é zero. Caso seja, mostrar mensagem...
         <div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
