@@ -10,17 +10,13 @@
 <body>
 	<link rel="stylesheet" href="/css/pizza.css">
 	<main>
-		<% 
-        for(let p of pizzas){
-        %>
-        <article>
-            <img src="<%= p.img%>" alt="<%=p.nome%>">
-            <a href="/pizzas/<%=p.id %>">Ver Mais</a>
-            <button>+ Add</button>
-            <div><%=p.nome %></div>
-            <span> <%=p.preco%></span>
-        </article> 
-        <%}%>
+		<h1><%=pizza.nome%></h1>
+		<h2><%=pizza.preco%></h2>
+		<img src="<%=pizza.img%>" alt="<%=pizza.nome%>">
+		<div><%=pizza.ingredientes%></div>
+		<button>+ Add</button>
+		<a href="/pizzas/<%= idAnterior %>" class="prev">&lt;</a>
+		<a href="/pizzas/<%= idProxima %>" class="next">&gt;</a>
 	</main>
 	
 </body>
